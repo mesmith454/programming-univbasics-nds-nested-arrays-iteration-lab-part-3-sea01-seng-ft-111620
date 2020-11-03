@@ -8,11 +8,11 @@ def join_nested_strings(src)
     element_index = 0 
     while element_index < src[row_index].count do
       if mixed_data[row_index][element_index].is_s?
-        sentence += mixed_data[row_index][element_index]
+        sentence << mixed_data[row_index][element_index]
       end
       element_index += 1 
     end
     row_index += 1 
   end
- sentence 
+ sentence.join
 end
